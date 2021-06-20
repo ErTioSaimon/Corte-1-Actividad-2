@@ -1,0 +1,263 @@
+/*los fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+/*
+font-family: 'Do Hyeon', sans-serif;
+font-family: 'Zen Dots', cursive;
+font-family: 'Orbitron', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tammudu 2', cursive;
+    }
+
+    html{
+        background-image: url(/Actividades/Actividad2/img/portadas/fondo4.jpg);
+        background-size: 100%;
+        background-repeat: repeat;
+        scroll-behavior: smooth;
+
+    }
+    
+    #encabezado{
+    justify-content: center;
+    width:100%;
+    height: 250px;
+    max-height: fit-content;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    background-color: rgb(61, 184, 44);
+    background-image: url(/Actividades/Actividad2/img/portadas/fondo2.jpg);
+    background-size: 100%;
+    }
+    
+    #encabezado h1{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: white;
+    font-size: 30pt;
+    font-family: 'Orbitron', sans-serif;
+    }
+    
+    #encabezado img{
+    margin-bottom: 15px;
+    width:"150px";
+    border-color: black;
+    }
+    
+    #navegacion{
+    width:100%;
+    border-top: solid 2px white;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: auto;
+    position:fixed;
+    top: 0;
+    opacity: 70%;
+    }
+    
+    #navegacion ol{
+    display: flex;
+    padding:0px;
+    margin:0px;
+    }
+    
+    #navegacion ol li{
+    list-style: none;
+    }
+    
+    #navegacion ol li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: flex;
+    }
+    
+    #navegacion ol li a:hover{
+    color:black;
+    background-color: white;
+    }
+    
+    #cuerpo{
+    margin: auto;
+    width: 80%;
+    background-color:rgb(96, 218, 208);
+    padding-left:5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    }
+    #pie{
+    width:100%;
+    background-color:rgb(38, 40, 63);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+    }
+    
+    .active{
+        color:red;
+        background-color:goldenrod;
+        }
+        
+    .espacio{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .cuerpo-titulo{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .cuerpo-titulo > h2{
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .titulo{
+        display: flex;
+        align-items:center;
+    }
+    
+    .titulo h3{
+        margin-left: 20px;
+    }
+    .titulo img{
+        width: 206px;
+        height: 309px;
+    }
+    
+    .comentario{
+        font-size: 20px;
+        
+    }
+
+    .comentario h2{
+        font-size: 55px;
+        text-align: center;
+        font-family: 'Zen Dots', cursive;
+        
+        margin-bottom: 10px;
+    }
+
+    .comentario .titulo .comenterio-cont{
+        display: block;
+    }
+
+    .cuerpo-formu{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items:center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cuerpo-formu aside{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cuerpo-formu aside h2{
+        text-align: center;
+    }
+
+    .cuerpo-formu aside form input,textarea{
+        max-width: 100%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        border-color: blue;
+        border-radius: 5px;
+    }
+
+    h3{
+        font-size: 30px;
+        font-family: 'Do Hyeon', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .mapa{
+        width: fit-content;
+        margin: 5px auto;
+    }
+
+    .cuerpo-contenido{
+        font-size: 20px;
+    }
+    
+    .justificada{
+    text-align: justify;
+    margin-left: 20px;
+    }
+    
+    .centrada{
+    text-align: center;
+    }
+    
+    .imagen-redonda2{
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    }
+    
+    @media (max-width: 850px) {
+        .cuerpo-formu{
+            margin: auto;
+            display: block;
+        }
+        .titulo img{
+            display: none;
+        }
+        .justificada{
+            margin-left: 0px;
+        }  
+        .cuerpo-titulo h2{
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .titulo img{
+            display: none;
+        }
+        h3{
+            font-size: 20px;
+        }
+        #encabezado h1{
+            font-size: 30px;
+        }
+        .titulo h3{
+            margin-left: 0px;
+        }
+        .justificada{
+            font-size: 15px;
+            margin-left: 0px;
+        }   
+        #encabezado{
+        
+        height: 150px;
+        }
+        .comentario{
+            font-size: 15px;
+            Line-height:1.5;
+        }
+        .comentario h2{
+            font-size: 20px;
+        }
+        
+    }
